@@ -4,7 +4,7 @@ import img from "../../public/img.png";
 export const Header = () => {
   return (
     <header>
-      <h1>Header</h1>
+      <h1 className="title">Header</h1>
       <img src={img} alt="monday" />
     </header>
   );
