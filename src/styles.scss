@@ -2,3 +2,58 @@
     font-size: 72px;
     color: midnightblue;
 }
+
+.card {
+    padding: 0 5em;
+
+    &__img {
+        display: block;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(93, 92, 92);
+    }
+
+    &__content {
+        padding: 1.5em;
+        background-color: white;
+    }   
+    
+    &__list {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        padding: .3em .5em;
+        margin-right: .5em;
+        background-color: antiquewhite;
+        border-radius: .3em;
+        font-size: .85em;
+        &--active {
+            background-color: bisque;
+            font-weight: bold;
+        }
+    }
+
+    width: 100%;
+    height: 250px;
+    background-color: rgb(52, 50, 50);
+}
+
+.card__picture {
+
+}
+
+.card__title {
+
+}
+
+.card__description {
+
+}
+
+.card__buton .card__button--active {
+
+}
