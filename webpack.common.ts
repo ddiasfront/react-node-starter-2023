@@ -2,6 +2,7 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import ESLintPlugin from "eslint-webpack-plugin";
 import { Configuration } from "webpack";
 import path from "path";
+import DotEnv from "dotenv-webpack";
 
 const srcPath = path.resolve(__dirname, "./");
 
@@ -57,6 +58,7 @@ const commonConfiguration: Configuration = {
     new ESLintPlugin({
       extensions: ["js", "jsx", "ts", "tsx"],
     }),
+    new DotEnv(),
   ],
 };
 

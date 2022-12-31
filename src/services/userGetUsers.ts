@@ -1,15 +1,12 @@
 import { useQuery } from "react-query";
-import { GraphQLClient, gql } from "graphql-request";
-
-const client = new GraphQLClient("http://localhost:3000/graphql", {
-  headers: {},
-});
+import { gql } from "graphql-request";
+import { clientInstance } from "../App";
 
 export function useGetUsers() {
   return useQuery(
     "get-users",
     async () => {
-      const { users } = await client.request(gql`
+      const { users } = await clientInstance.request(gql`
         query Users {
           users {
             name
